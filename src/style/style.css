@@ -167,6 +167,8 @@ a {
 
 .center_content {
     width: 550px;
+    height: fit-content;
+    margin-top: 15px;
 }
 
 .what_new {
@@ -175,7 +177,6 @@ a {
     align-items: center;
     background-color: #ffffff;
     border-radius: 10px;
-    margin-top: 15px;
     padding: 0 20px;
     height: 52px;
     border: 1px solid #dce1e6;
@@ -226,7 +227,7 @@ a {
     border:  1px solid #dce1e6;
     border-radius: 10px;
     width: 325px;
-    height: 270px;
+    height:fit-content;
     background-color: #ffffff;
 }
 
@@ -236,8 +237,13 @@ a {
     font-size: 13px;
 }
 
+.first_pos {
+    background-color: #f5f6f8;
+    border-radius: 8px;
+}
+
 .right_sidebar div:hover {
-    background-color: #edeef0;
+    background-color: #f5f6f8;
     border-radius: 8px;
 }
 
@@ -371,4 +377,496 @@ a {
 
 .actions_post svg {
     margin-right: 5px;
+}
+
+/* messages */
+
+.search_chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    padding: 0 15px;
+    height: 52px;
+    border: 1px solid #dce1e6;
+    border-bottom: none;
+}
+
+.search_chat input {
+    width: 100%;
+    font-size: 13px;
+    height: 30px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    color: #93a3bc;
+}
+
+.chats {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #dce1e6;
+
+    margin-top: 0;
+    font-size: 13px;
+    margin-bottom: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.chat_row {
+    border-bottom: 1px solid #dce1e6;
+}
+
+.chat_row :hover{
+    background-color: #f5f6f8;
+}
+
+.chat_avatar {
+    padding: 10px 14px 7px 20px;
+}
+
+.chat_avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #dce1e6;
+}
+
+.chat_row a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.chat_top_bar {
+    width: 451px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name_chat_info{
+    color: #2a5885;
+    font-weight: 600;
+}
+
+/* Groups */
+
+.center_content_groups {
+    width: 550px;
+    height: fit-content;
+    margin-top: 15px;
+}
+
+.title_groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #dce1e6;
+    border-bottom: none;
+}
+
+.left_title_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 18px 20px;
+}
+
+.btn_all_groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_all_groups a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    color: #818c99;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dce1e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .04), 0 0 4px rgba(0, 0, 0, .06);
+}
+
+ .btn_manage_groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .btn_manage_groups a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    margin: 0 0 0 6px;
+    color: #818c99;
+ }
+
+ .counter_all_groups, .counter_manage_groups {
+    font-size: 13px;
+    margin: 0 0 0 6px;
+    font-weight: bold;
+ }
+
+ .btn_manage_groups :hover, .btn_all_groups :hover {
+    background-color: #f5f6f8;
+    border-radius: 8px;
+ }
+
+ .btn_create_group {
+    padding: 5px 0;
+    border-radius: 8px;
+    margin: 0 20px 0 75px;
+    background-color: #447BBA;
+    
+ }
+
+ .btn_create_group a{
+    color: #ffffff;
+    padding: 0 16px;
+    font-weight: bold;
+ }
+
+ .btn_create_group :hover{
+    color: #f5f6f8;
+ }
+
+ .search_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #d3d9de;
+    border-top: none;
+    border-bottom: none;
+    justify-content: right;
+    background-color: #ffffff;
+    padding: 0 20px 4px;
+}
+
+.wrapper_search_group {
+    border: 1px solid #d3d9de;
+    border-radius: 6px 0 0 6px;
+}
+
+.search_group input {
+    width: 100%;
+    font-size: 13px;
+    border: none;
+    color: #93a3bc;
+    border-radius: 6px 0 0 6px;
+    margin: 0 300px 0 12px;
+    padding: 8px 0px 8px 0;
+}
+
+.btn_search_group{
+    width: 48px;
+    height: 33px;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    float: right;
+    border: 1px solid #d3d9de;
+    border-radius: 0 6px 6px 0;
+    background: rgb(235 242 250 / 99%);
+    cursor: pointer;
+}
+
+.btn_search_group svg {
+    margin-top: 4px;
+}
+
+.groups {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #dce1e6;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 0;
+    font-size: 13px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid #dce1e6; 
+}
+
+.group_row {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #dce1e6;
+}
+
+.group_row_left {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.avatar_group img {
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+    border-radius: 50%;
+    border: 1px solid #dce1e6;
+}
+
+.group_row_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #626d7a;
+}
+
+.name_group a {
+    color: #2a5885;
+    font-weight: 600;
+}
+
+.about_group,
+.followers_group,
+.name_group {
+    padding: 9px 0 0;
+}
+
+.name_group a:hover {
+    text-decoration: underline;
+}
+
+/* Friends */
+
+.center_content_friends {
+    width: 550px;
+    height: fit-content;
+    margin-top: 15px;
+}
+
+.title_friends {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #dce1e6;
+    border-bottom: none;
+}
+
+.left_title_friend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 18px 20px;
+}
+
+.btn_all_friends {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_all_friends a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    color: #818c99;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dce1e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .04), 0 0 4px rgba(0, 0, 0, .06);
+}
+
+ .btn_manage_friends {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .btn_manage_friends a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    margin: 0 0 0 6px;
+    color: #818c99;
+ }
+
+ .counter_all_friends, .counter_manage_groups {
+    font-size: 13px;
+    margin: 0 0 0 6px;
+    font-weight: bold;
+ }
+
+ .btn_manage_friends :hover, .btn_all_friends :hover {
+    background-color: #f5f6f8;
+    border-radius: 8px;
+ }
+
+ .btn_find_friends {
+    padding: 5px 0;
+    border-radius: 8px;
+    margin: 0 20px 0 75px;
+    background-color: #447BBA;
+    
+ }
+
+ .btn_find_friends a{
+    color: #ffffff;
+    padding: 0 16px;
+    font-weight: bold;
+ }
+
+ .btn_find_friends :hover{
+    color: #f5f6f8;
+ }
+
+ .search_friend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #d3d9de;
+    border-top: none;
+    border-bottom: none;
+    justify-content: right;
+    background-color: #ffffff;
+    padding: 0 20px 4px;
+}
+
+.wrapper_search_friend {
+    border: 1px solid #d3d9de;
+    border-radius: 6px 0 0 6px;
+}
+
+.search_friend input {
+    width: 100%;
+    font-size: 13px;
+    border: none;
+    color: #93a3bc;
+    border-radius: 6px 0 0 6px;
+    margin: 0 300px 0 12px;
+    padding: 8px 0px 8px 0;
+}
+
+.btn_serach_friend {
+    width: 64px;
+    height: 33px;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    float: right;
+    border: 1px solid #d3d9de;
+    border-radius: 0 6px 6px 0;
+    background: rgb(235 242 250 / 99%);
+    cursor: pointer;
+}
+
+.btn_serach_friend svg{
+    margin-top: 4px;
+}
+
+.friends {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #dce1e6;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 0;
+    font-size: 13px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid #dce1e6; 
+}
+
+.friend_row {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #dce1e6;
+}
+
+.friend_row_left {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.avatar_friend img {
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+    border-radius: 50%;
+    border: 1px solid #dce1e6;
+}
+
+.friend_row_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #626d7a;
+}
+
+.name_friend a {
+    color: #2a5885;
+    font-weight: 600;
+}
+
+.actions_with_friends {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.write_friend a, .call_friend a{
+    color: #2a5885;
+}
+
+.separate_actions {
+    display: inline-block;
+    margin: 0 6px;
+    background-color: #939393;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.education_friend,
+.actions_with_friends,
+.name_friend{
+    padding: 9px 0 0;
+}
+
+.name_friend a:hover,
+.write_friend a:hover,
+.call_friend a:hover {
+    text-decoration: underline;
 }
